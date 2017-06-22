@@ -8,29 +8,29 @@
 %
 \documentclass{llncs}
 
+\usepackage{graphicx}
+
 \begin{document}
 
-\title{Springer LNCS Example Paper}
-%
-\titlerunning{Hamiltonian Mechanics}  % abbreviated title (for running head)
+\title{Ejemplo de art\'iculo de revista Universidad de Ja\'en}
+
+\titlerunning{Hamiltonian Mechanics}  % abbreviated ttle (for running head)
 %                                     also used for the TOC unless
 %                                     \toctitle is used
 %
-\author{Ivar Ekeland\inst{1} \and Roger Temam\inst{2}
-Jeffrey Dean \and David Grove \and Craig Chambers \and Kim~B.~Bruce \and
-Elsa Bertino}
+\author{Lina Garc\'ia-Cabrera\inst{1} \and Ildefonso Ruano-Ruano\inst{2}
+Jose Ram\'on Balsas-Almagro\inst{1}}
 %
-\authorrunning{Ivar Ekeland et al.} % abbreviated author list (for running head)
+\authorrunning{Lina Garc\'ia-Cabrera et al.} % abbreviated author list (for running head)
 %
 %%%% list of authors for the TOC (use if author list has to be modified)
-\tocauthor{Ivar Ekeland, Roger Temam, Jeffrey Dean, David Grove,
-Craig Chambers, Kim B. Bruce, and Elisa Bertino}
+\tocauthor{Lina Garc\'ia-Cabrera, Ildefonso Ruano-Ruano, and Jose Ram\'on Balsas-Almagro}
 %
-\institute{Princeton University, Princeton NJ 08544, USA,\\
-\email{I.Ekeland@princeton.edu},\\ WWW home page:
+\institute{University of Ja\'en, Ja\'en, 23070, Spain,\\
+\email{lina@ujaen.es},\\ WWW home page:
 \texttt{http://users/\homedir iekeland/web/welcome.html}
 \and
-Universit\'{e} de Paris-Sud,
+University of Ja\'en, Ja\'en,
 Laboratoire d'Analyse Num\'{e}rique, B\^{a}timent 425,\\
 F-91405 Orsay Cedex, France}
 
@@ -48,21 +48,49 @@ There will be two blank lines before and after the Abstract. \dots
 %
 With this chapter, the preliminaries are over, and we begin the search
 for periodic solutions to Hamiltonian systems. All this will be done in
-the convex case; that is, we shall study the boundary-value problem
+the convex case; that is, we \textbf{shall} study the \textit{boundary-value problem}
 \begin{eqnarray*}
   \dot{x}&=&JH' (t,x)\\
   x(0) &=& x(T)
 \end{eqnarray*}
 with $H(t,\cdot)$ a convex function of $x$, going to $+\infty$ when
 $\left\|x\right\| \to \infty$.
+\section*{Título sin pu\~netas de número}
+Esto en un párrafo escribiendo en cursiva \textit{texto en cursiva}
+\small
+cambiando el tamaño de texto más pequeño que el normal
+\normalsize
+\begin{quote}
+Párrafo qu es una cita muy larga de un autor sjdflkasjdf adfajkfjakdflajfla adfklja al jalkjfa adjfka afadldf akdsfalsdfla sdjflasj
+\end{quote}
+En la sección número \ref{autonomous} se hablará de esto y de lo  otro en la \ref{eq:three}
+lista ordenada
+\begin{enumerate}
+\item adkfa
+\item adjlka
+\item adkjfla
+\begin{itemize}
+\item adfa
+\item asdfa
+\end{itemize}
+\item adaf
+\end{enumerate}
 
+Dentro del  texto una ecuación \(x_i*x_j=x^k_n x^k{_n}\)
+\begin{equation}
+Media = \frac{\sum_{\sum}{x_i}
+\end{equation}
 %
-\subsection{Autonomous Systems}
+\subsection{Autonomous Systems}\label{autonomous}
 %
 In this section, we will consider the case when the Hamiltonian $H(x)$
-is autonomous. For the sake of simplicity, we shall also assume that it
+is autonomous\cite{Garcia-Cabrera2014,Garcia-Cabrera2010a,Balsas-Almagro2013,}. For the sake of simplicity, we shall also assume that it
 is $C^{1}$.
-
+\begin{figure}
+\centering
+\includegraphics[width=5cm]{PpDiagram.jpg}
+\caption{Graf\'ico muy bonito}
+\end{figure}
 We shall first consider the question of nontriviality, within the
 general framework of
 $\left(A_{\infty},B_{\infty}\right)$-subquadratic Hamiltonians. In
@@ -108,7 +136,8 @@ is a convex function, and
   \left(\left(B_{\infty} - A_{\infty}\right) x,x\right)
   + c\ \ \ \forall x\ .
 \end{equation}
-
+\bibliographystyle{abbrv}
+\bibliography{MendeleyLina}
 %
 \begin{proposition}
 Assume $H'(0)=0$ and $ H(0)=0$. Set:
